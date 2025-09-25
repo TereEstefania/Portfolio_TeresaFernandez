@@ -1,0 +1,82 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f4fafd;
+    color: #222;
+}
+
+.bg-gradient-blue-green {
+    background: linear-gradient(90deg, #1e90ff 0%, #17c37b 100%);
+}
+
+.btn-gradient-blue-green {
+    background: linear-gradient(90deg, #1e90ff 0%, #17c37b 100%);
+    color: #fff;
+    border: none;
+    transition: box-shadow 0.2s;
+}
+.btn-gradient-blue-green:hover {
+    box-shadow: 0 4px 20px rgba(30,144,255,0.2);
+    color: #fff;
+}
+
+.hero-section {
+    min-height: 60vh;
+    background: linear-gradient(120deg, #1e90ff 60%, #17c37b 100%);
+    color: #fff;
+    padding: 60px 0 40px 0;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e90ff;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    max-width: 600px;
+    color: #222;
+    font-size: 1.1rem;
+}
+
+.project-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(23,195,123,0.15);
+}
+.project-card .card-title {
+    color: #17c37b;
+    font-weight: 700;
+}
+.project-card .card-text {
+    color: #222;
+}
+
+.contact-form label {
+    color: #1e90ff;
+}
+
+.footer {
+    background: linear-gradient(90deg, #1e90ff 0%, #17c37b 100%);
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 40px 0 20px 0;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .about-text {
+        font-size: 1rem;
+    }
+}
