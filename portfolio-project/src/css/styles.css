@@ -1,27 +1,40 @@
 body {
     font-family: 'Montserrat', Arial, sans-serif;
-    background: #f4fafd;
-    color: #222;
+    background: linear-gradient(135deg, #0f0f2e 0%, #1a1a4d 100%);
+    color: #fff;
 }
 
 .bg-gradient-blue-green {
-    background: linear-gradient(90deg, #1e90ff 0%, #17c37b 100%);
+    background: linear-gradient(90deg, #1a1a4d 0%, #2d1b4e 100%);
 }
 
 .btn-gradient-blue-green {
-    background: linear-gradient(90deg, #1e90ff 0%, #17c37b 100%);
-    color: #fff;
+    background: linear-gradient(90deg, #ff6b35 0%, #ffd700 100%);
+    color: #1a1a4d;
     border: none;
-    transition: box-shadow 0.2s;
+    transition: all 0.3s;
+    font-weight: 700;
+    animation: shimmer 3s ease-in-out infinite;
 }
 .btn-gradient-blue-green:hover {
-    box-shadow: 0 4px 20px rgba(30,144,255,0.2);
-    color: #fff;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.5);
+    color: #1a1a4d;
+    transform: translateY(-2px);
+    animation: none;
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(255, 107, 53, 0);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 107, 53, 0.3);
+    }
 }
 
 .hero-section {
     min-height: 60vh;
-    background: linear-gradient(120deg, #1e90ff 60%, #17c37b 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../assets/Gemini_Generated_Image_5c512e5c512e5c51.png') center/cover no-repeat;
     color: #fff;
     padding: 60px 0 40px 0;
 }
@@ -29,14 +42,27 @@ body {
 .section-title {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #1e90ff;
+    color: #9c27b0;
     margin-bottom: 1.5rem;
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(156, 39, 176, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(156, 39, 176, 0.8), 0 0 30px rgba(255, 107, 53, 0.4);
+    }
 }
 
 .about-text {
-    max-width: 600px;
-    color: #222;
+    max-width: 720px;
+    color: whitesmoke;
     font-size: 1.1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
 }
 
 .project-card {
@@ -44,28 +70,58 @@ body {
     border-radius: 18px;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
+    animation: floatCard 3s ease-in-out infinite;
 }
 .project-card:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(23,195,123,0.15);
+    box-shadow: 0 8px 32px rgba(156,39,176,0.15);
+    animation: none;
 }
 .project-card .card-title {
-    color: #17c37b;
+    color: #00bcd4;
     font-weight: 700;
 }
 .project-card .card-text {
     color: #222;
 }
 
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .contact-form label {
-    color: #1e90ff;
+    color: #9c27b0;
 }
 
 .footer {
-    background: linear-gradient(90deg, #1e90ff 0%, #17c37b 100%);
+    background: linear-gradient(90deg, #0a1628 0%, #1a3a52 100%);
     color: #fff;
     font-size: 1rem;
     letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ff6b35;
+    transform: translateY(-3px) scale(1.2);
+    text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
 }
 
 /* Responsive adjustments */
