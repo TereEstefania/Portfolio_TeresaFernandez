@@ -1,6 +1,4 @@
 [build]
   command = "echo 'Portfolio build complete'"
   publish = "src"
-
-[dev]
-  directory = "src"
+  functions = "netlify/functions"

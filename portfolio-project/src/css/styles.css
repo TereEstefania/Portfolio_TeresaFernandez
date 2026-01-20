@@ -70,12 +70,10 @@ body {
     border-radius: 18px;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    animation: floatCard 3s ease-in-out infinite;
 }
 .project-card:hover {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 8px 32px rgba(156,39,176,0.15);
-    animation: none;
 }
 .project-card .card-title {
     color: #00bcd4;
@@ -85,21 +83,12 @@ body {
     color: #222;
 }
 
-@keyframes floatCard {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
 .contact-form label {
     color: #9c27b0;
 }
 
 .footer {
-    background: linear-gradient(90deg, #0a1628 0%, #1a3a52 100%);
+    background: linear-gradient(90deg, #1a1a4d 0%, #2d1b4e 100%);
     color: #fff;
     font-size: 1rem;
     letter-spacing: 1px;
