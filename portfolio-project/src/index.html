@@ -92,24 +92,28 @@ Busco sumarme a un equipo dinámico donde pueda aportar mis ganas de trabajar y 
         <!-- Contact -->
         <section id="contact" class="text-center mb-5">
             <h2 class="section-title">Contacto</h2>
-            <form class="contact-form mx-auto p-4 rounded shadow" style="max-width: 500px; background: #f8f9fa;">
+            <form class="contact-form mx-auto p-4 rounded shadow" id="contact-form" style="max-width: 500px; background: #f8f9fa;">
                 <div class="form-group">
-                    <label for="name" class="font-weight-bold">Nombre</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <label for="from_name" class="font-weight-bold">Nombre</label>
+                    <input type="text" class="form-control" id="from_name" name="from_name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email" class="font-weight-bold">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <label for="from_email" class="font-weight-bold">Email</label>
+                    <input type="email" class="form-control" id="from_email" name="from_email" required>
                 </div>
                 <div class="form-group">
                     <label for="message" class="font-weight-bold">Mensaje</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-gradient-blue-green btn-block font-weight-bold">Enviar mensaje</button>
+                <div id="liveAlertPlaceholder">
+    
+                </div>
+                <button id="liveAlertBtn" type="submit" class="btn btn-gradient-blue-green btn-block font-weight-bold">Enviar mensaje</button>
+                
             </form>
         </section>
     </main>
-    <button id="btnTop" class="btn btn-primary d-none" style="position: fixed; bottom: 30px; right: 30px; z-index: 1000;">
+ <button id="btnTop" class="btn btn-primary d-none" style="position: fixed; bottom: 30px; right: 30px; z-index: 1000;">
         ↑
     </button>
 
@@ -128,6 +132,7 @@ Busco sumarme a un equipo dinámico donde pueda aportar mis ganas de trabajar y 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

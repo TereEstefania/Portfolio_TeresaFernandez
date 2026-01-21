@@ -34,9 +34,12 @@ body {
 
 .hero-section {
     min-height: 60vh;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../assets/Gemini_Generated_Image_5c512e5c512e5c51.png') center/cover no-repeat;
+   /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%); */
     color: #fff;
     padding: 60px 0 40px 0;
+    background-image: url('../assets/Gemini_Generated_Image_5c512e5c512e5c51.png');
+    background-size: cover;
+    background-position: center; 
 }
 
 .section-title {
