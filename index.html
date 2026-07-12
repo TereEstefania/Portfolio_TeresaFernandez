@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teresa Fernández — Desarrolladora de Software</title>
+ 
+<!-- Bootstrap 5.3 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+    <body>
+        <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#top">TERESA<span class="dot">.</span>FERNÁNDEZ</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">// sobre-mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">// skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">// proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencia">// experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formacion">// formación</a></li>
+            <li class="nav-item ms-lg-2">
+            <a class="btn btn-ignition btn-sm" href="#contacto">contactar</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="top">
+    <div class="container">
+        <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+            <span class="eyebrow">disponible para nuevos proyectos</span>
+            <h1>Construyo software con <span class="text-flame">potencia</span> real.</h1>
+            <p class="lead">Desarrolladora backend & fullstack. Convierto ideas en productos rápidos, estables y simples de usar — de la base de datos a la interfaz.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#proyectos" class="btn btn-ignition">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline-carbon">Hablemos</a>
+            </div>
+        </div>
+        <div class="col-lg-6 reveal">
+            <div class="terminal">
+            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <div class="terminal-body">
+                <div><span class="muted">$</span> whoami</div>
+                <div class="out">tu_nombre — software developer</div>
+                <div class="mt-2"><span class="muted">$</span> <span id="typed-line"></span></div>
+                <div class="mt-3 muted">stack: java · spring boot · vue 3 · asp.net core</div>
+                <div class="muted">status: <span class="out">[ok] listo para el siguiente reto</span></div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+    
+    <!-- ===================== SOBRE MI ===================== -->
+    <section id="sobre-mi">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+        <div class="col-lg-5 reveal">
+            <div class="about-photo">
+            <span class="placeholder-icon">TN</span>
+            </div>
+        </div>
+        <div class="col-lg-7 reveal">
+            <span class="section-tag">01 / sobre mí</span>
+            <h2 class="section-title">Simplicidad que funciona bajo presión.</h2>
+            <p class="mt-3" style="color:var(--graphite); max-width:560px;">
+            Me especializo en construir APIs y aplicaciones fullstack sólidas, desde el modelo de datos hasta la experiencia final. Me mueve resolver problemas reales con código claro y decisiones simples — sin vueltas innecesarias.
+            </p>
+            <div class="row mt-4 g-4">
+            <div class="col-6 col-sm-4">
+                <div class="stat-block">
+                <div class="stat-num">10+</div>
+                <div class="stat-label">proyectos entregados</div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="stat-block">
+                <div class="stat-num">4</div>
+                <div class="stat-label">stacks dominados</div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="stat-block">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">compromiso real</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" style="background:var(--ash);">
+    <div class="container">
+        <span class="section-tag reveal">02 / skills</span>
+        <h2 class="section-title reveal">Herramientas que uso a diario.</h2>
+    
+        <div class="row mt-5 g-5">
+        <div class="col-lg-6 reveal">
+            <h3 class="h6 mono text-uppercase mb-4" style="letter-spacing:.08em; color:var(--ember);">Backend</h3>
+            <div class="skill-row">
+            <div class="top"><span>Java / Spring Boot</span><span>90%</span></div>
+            <div class="gauge"><div class="gauge-fill" data-fill="90"></div></div>
+            </div>
+            <div class="skill-row">
+            <div class="top"><span>ASP.NET Core / EF Core</span><span>80%</span></div>
+            <div class="gauge"><div class="gauge-fill" data-fill="80"></div></div>
+            </div>
+            <div class="skill-row">
+            <div class="top"><span>SQL Server / bases de datos</span><span>85%</span></div>
+            <div class="gauge"><div class="gauge-fill" data-fill="85"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-6 reveal">
+            <h3 class="h6 mono text-uppercase mb-4" style="letter-spacing:.08em; color:var(--ember);">Frontend</h3>
+            <div class="skill-row">
+            <div class="top"><span>Vue 3 / TypeScript</span><span>85%</span></div>
+            <div class="gauge"><div class="gauge-fill" data-fill="85"></div></div>
+            </div>
+            <div class="skill-row">
+            <div class="top"><span>Tailwind CSS / Bootstrap</span><span>80%</span></div>
+            <div class="gauge"><div class="gauge-fill" data-fill="80"></div></div>
+            </div>
+            <div class="skill-row">
+            <div class="top"><span>Pinia / Vue Router</span><span>75%</span></div>
+            <div class="gauge"><div class="gauge-fill" data-fill="75"></div></div>
+            </div>
+        </div>
+        </div>
+    
+        <div class="mt-5 reveal">
+        <h3 class="h6 mono text-uppercase mb-3" style="letter-spacing:.08em; color:var(--ember);">También trabajo con</h3>
+        <span class="skill-pill">Docker</span>
+        <span class="skill-pill">AWS EC2</span>
+        <span class="skill-pill">JWT Auth</span>
+        <span class="skill-pill">Git / GitHub</span>
+        <span class="skill-pill">REST APIs</span>
+        <span class="skill-pill">Axios</span>
+        </div>
+    </div>
+    </section>
+    
+    <!-- ===================== PROYECTOS ===================== -->
+    <section id="proyectos">
+    <div class="container">
+        <span class="section-tag reveal">03 / proyectos</span>
+        <h2 class="section-title reveal">Cosas que construí.</h2>
+    
+        <div class="row mt-5 g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+            <div class="project-card">
+            <div class="project-thumb"><span class="glyph">01</span></div>
+            <div class="project-body">
+                <h3>Nombre del proyecto</h3>
+                <p>Breve descripción de qué resuelve el proyecto y qué lo hace interesante.</p>
+                <div class="project-tags mb-3">
+                <span>#java</span><span>#springboot</span><span>#api-rest</span>
+                </div>
+                <div class="project-links d-flex gap-3">
+                <a href="#">Ver demo →</a>
+                <a href="#">Código ↗</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-4 reveal">
+            <div class="project-card">
+            <div class="project-thumb"><span class="glyph">02</span></div>
+            <div class="project-body">
+                <h3>Nombre del proyecto</h3>
+                <p>Breve descripción de qué resuelve el proyecto y qué lo hace interesante.</p>
+                <div class="project-tags mb-3">
+                <span>#vue3</span><span>#aspnetcore</span><span>#docker</span>
+                </div>
+                <div class="project-links d-flex gap-3">
+                <a href="#">Ver demo →</a>
+                <a href="#">Código ↗</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-4 reveal">
+            <div class="project-card">
+            <div class="project-thumb"><span class="glyph">03</span></div>
+            <div class="project-body">
+                <h3>Nombre del proyecto</h3>
+                <p>Breve descripción de qué resuelve el proyecto y qué lo hace interesante.</p>
+                <div class="project-tags mb-3">
+                <span>#typescript</span><span>#pinia</span><span>#jwt</span>
+                </div>
+                <div class="project-links d-flex gap-3">
+                <a href="#">Ver demo →</a>
+                <a href="#">Código ↗</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- ===================== EXPERIENCIA ===================== -->
+    <section id="experiencia" style="background:var(--ash);">
+    <div class="container">
+        <span class="section-tag reveal">04 / experiencia</span>
+        <h2 class="section-title reveal">Mi camino hasta acá.</h2>
+    
+        <div class="timeline mt-5">
+        <div class="timeline-item reveal">
+            <div class="timeline-date">2025 — presente</div>
+            <h3>Rol / Programa actual</h3>
+            <p>Descripción breve de lo que hacés: stack, responsabilidades y algún logro concreto.</p>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="timeline-date">2024</div>
+            <h3>Proyecto o formación destacada</h3>
+            <p>Descripción breve de lo que hacés: stack, responsabilidades y algún logro concreto.</p>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="timeline-date">2023</div>
+            <h3>Inicio del camino</h3>
+            <p>Descripción breve de lo que hacés: stack, responsabilidades y algún logro concreto.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- ===================== FORMACIÓN & HABILIDADES BLANDAS ===================== -->
+    <section id="formacion">
+    <div class="container">
+        <span class="section-tag reveal">05 / formación</span>
+        <h2 class="section-title reveal">Formándome para enseñar lo que sé.</h2>
+    
+        <div class="row mt-5 g-5">
+        <div class="col-lg-5 reveal">
+            <div class="edu-card">
+            <span class="badge-status">cursando actualmente</span>
+            <h3>Profesorado Superior en Informática</h3>
+            <div class="institucion">Instituto Joaquín V. González — desde 2025</div>
+            <p>Formación docente enfocada en enseñanza de informática: además de programar, estoy desarrollando herramientas para comunicar ideas técnicas con claridad, diseñar procesos de aprendizaje y acompañar a otras personas en su camino dentro de IT.</p>
+            </div>
+        </div>
+    
+        <div class="col-lg-7 reveal">
+            <h3 class="h6 mono text-uppercase mb-3" style="letter-spacing:.08em; color:var(--ember);">Habilidades blandas aplicadas a IT</h3>
+            <div class="soft-skill">
+            <span class="icon">Cx</span>
+            <div>
+                <h4>Comunicación técnica clara</h4>
+                <p>Explicar código, arquitecturas y decisiones técnicas a equipos y personas no técnicas, sin perder precisión.</p>
+            </div>
+            </div>
+            <div class="soft-skill">
+            <span class="icon">Tm</span>
+            <div>
+                <h4>Trabajo en equipo</h4>
+                <p>Experiencia colaborando en proyectos fullstack con roles y stacks distintos, coordinando entregas y documentación.</p>
+            </div>
+            </div>
+            <div class="soft-skill">
+            <span class="icon">Mn</span>
+            <div>
+                <h4>Enseñanza y mentoría</h4>
+                <p>La formación docente suma capacidad de guiar, dar feedback constructivo y acompañar el aprendizaje de otras personas del equipo.</p>
+            </div>
+            </div>
+            <div class="soft-skill">
+            <span class="icon">Ad</span>
+            <div>
+                <h4>Adaptabilidad</h4>
+                <p>Cómoda moviéndome entre Java, .NET y Vue según lo que pida cada proyecto, sin perder ritmo ni calidad.</p>
+            </div>
+            </div>
+            <div class="soft-skill">
+            <span class="icon">Ps</span>
+            <div>
+                <h4>Resolución de problemas</h4>
+                <p>Enfoque metódico para debuguear, priorizar y encontrar la solución más simple posible ante un bloqueo.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto">
+    <div class="container">
+        <div class="contact-section reveal">
+        <div class="row g-5">
+            <div class="col-lg-5">
+            <span class="section-tag">06 / contacto</span>
+            <h2>Trabajemos juntas.</h2>
+            <p class="lead mt-3">¿Tenés un proyecto en mente o una posición abierta? Escribime, respondo rápido.</p>
+            <div class="mt-4">
+                <a href="#" class="social-link" aria-label="GitHub">GH</a>
+                <a href="#" class="social-link" aria-label="LinkedIn">IN</a>
+                <a href="#" class="social-link" aria-label="Email">@</a>
+            </div>
+            </div>
+            <div class="col-lg-7">
+            <form>
+                <div class="row g-4">
+                <div class="col-sm-6">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="tu@email.com">
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-control" rows="3" placeholder="Contame sobre tu proyecto..."></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-ignition mt-2">Enviar mensaje</button>
+                </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    <footer class="text-center">
+    <div class="container">© 2026 Tu Nombre — hecho con bootstrap 5.3 &amp; cafeína</div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    </body>
+</html>
