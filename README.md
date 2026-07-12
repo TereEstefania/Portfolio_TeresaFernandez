@@ -1,4 +1,4 @@
-# 🔥 Soy Teresa Fernández, bienvenido al repo de mi portfolio
+# 🔥 Hola soy Teresa Fernández, bienvenid@ al repo de mi portfolio
 
 En este repositorio encontraras el codigo de mi portfolio, lo pense para que trasmitiera una identidad visual propia basada en el concepto de **ignición**: energía, acción y potencia, construida sobre **Bootstrap 5.3**. La idea surje de querer trasmitir rasgos de mi propia persona. Espero que les guste!🙃
 
